@@ -123,7 +123,63 @@ const MainPostSection = () => {
                             <FaPen />
                         </button>
                     </div>
-                    
+                    <div className='poster-right col-lg-4 d-none d-lg-flex justify-content-center'>
+                        <div className='center-dive'>
+                            <div className='location'>
+                                <label className='d-flex justify-content-between align-items-center'>
+                                    <span>
+                                        <GrLocation />
+                                        <input readOnly={write ? write : ''} type="text" defaultValue='Nodi, India' placeholder='Enter your location' />
+                                    </span>
+                                    <span onClick={() => setWrite(!write)}>
+                                        {
+                                            write ? <FaPen /> : <RxCross2 />
+                                        }
+                                    </span>
+                                </label>
+                                <p className='mb-0 d-flex mt-4'>
+                                    <p className='mb-0 me-1'>
+                                        <BiErrorCircle />
+                                    </p>
+                                    Your location will help us serve better and extend a personalised experience.
+                                </p>
+                            </div>
+                            <div className='user-list mt-5'>
+                                <p className='text-uppercase d-flex align-items-center'><span className='d-flex align-items-center me-1'><AiFillLike width={16} height={15} /></span> <span>REcommended Groups</span></p>
+                                <div className='list'>
+                                    <div className='d-flex justify-content-between align-items-center'>
+                                        <div>
+                                            <img height={36} src="https://i.ibb.co/MfzJpDj/user4.png" alt="user" />
+                                            <span className='ms-2'>Leisure</span>
+                                        </div>
+                                        <button>Follow</button>
+                                    </div>
+                                    <div className='d-flex justify-content-between align-items-center mt-4'>
+                                        <div>
+                                            <img height={36} src="https://i.ibb.co/MgT5pCX/user1.png" alt="user" />
+                                            <span className='ms-2'>Activism</span>
+                                        </div>
+                                        <button>Follow</button>
+                                    </div>
+                                    <div className='d-flex justify-content-between align-items-center mt-4'>
+                                        <div>
+                                            <img height={36} src="https://i.ibb.co/cDH6TyS/user3.png" alt="user" />
+                                            <span className='ms-2'>MBA</span>
+                                        </div>
+                                        <button>Follow</button>
+                                    </div>
+                                    <div className='d-flex justify-content-between align-items-center mt-4'>
+                                        <div>
+                                            <img height={36} src="https://i.ibb.co/jW3C71d/user2.png" alt="user" />
+                                            <span className='ms-2'>Philosophy</span>
+                                        </div>
+                                        <button>Follow</button>
+                                    </div>
+                                    <p className='text-end mt-5 text-info'>See More...</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
